@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<WhatsTheTwilio.Models.Contact>
+
+@foreach (var contact in Model)
+{
+    @if (contact == null)
+    {
+        <p>No Contacts Available</p>
+    }
+    else
+    {
+        <div>
+            <h3>
+                @Html.DisplayFor(modelItem => contact.Name):
+                @Html.DisplayFor(modelItem => contact.Number)
+            </h3>
+
+        </div>
+    }
+}

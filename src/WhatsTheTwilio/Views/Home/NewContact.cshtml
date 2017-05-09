@@ -2,20 +2,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model WhatsTheTwilio.Models.Contact
+@model IEnumerable<WhatsTheTwilio.Models.Contact>
 
 <h2>Add A New Contact!</h2>
-
-@using (Html.BeginForm())
-{
-@Html.LabelFor(model => model.Name)
-@Html.TextBoxFor(model => model.Name)
-<br />
-@Html.LabelFor(model => model.Number)
-@Html.TextBoxFor(model => model.Number)
-<input type="submit" value="Add!" />
-}
-
 
 <form action="NewContact" class="new-contact">
     <label for="newName">Name: </label>
@@ -27,3 +16,27 @@
 <div class="contact-confirm"></div>
 
 @Html.ActionLink("Back home", "Index")
+
+
+<form action="ContactList" class="contact-list">
+    <button type="submit">View Contacts</button>
+</form>
+<div id="contact-list"></div>
+
+@foreach (var contact in Model)
+{
+    @if (contact == null)
+    {
+        <p>No Contacts Available</p>
+    }
+    else
+    {
+        <div>
+            <h3>
+                @Html.DisplayFor(modelItem => contact.Name):
+                @Html.DisplayFor(modelItem => contact.Number)
+            </h3>
+
+        </div>
+    }
+}

@@ -17,7 +17,12 @@ namespace WhatsTheTwilio.Controllers
 
         public IActionResult NewContact()
         {
-            return View();
+            return View(db.Contacts.ToList());
+        }
+
+        public IActionResult ContactList()
+        {
+            return View(db.Contacts.ToList());
         }
 
         [HttpPost]
@@ -26,7 +31,6 @@ namespace WhatsTheTwilio.Controllers
             Contact newContact = new Contact(newName, newNumber);
             db.Contacts.Add(newContact);
             db.SaveChanges();
-            Console.WriteLine("I WAS USED");
             return Json(newContact);
         }
 
