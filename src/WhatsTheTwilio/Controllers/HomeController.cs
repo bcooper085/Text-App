@@ -15,12 +15,12 @@ namespace WhatsTheTwilio.Controllers
             return View();
         }
 
-        public IActionResult Create()
+        public IActionResult NewContact()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Contact contact)
+        public IActionResult NewContact(Contact contact)
         {
             db.Contacts.Add(contact);
             db.SaveChanges();

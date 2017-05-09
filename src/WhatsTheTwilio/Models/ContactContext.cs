@@ -17,7 +17,7 @@ namespace WhatsTheTwilio.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Gummi;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Twilio;integrated security=True");
         }
         public ContactContext(DbContextOptions<ContactContext> options)
             : base(options)

@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\bin\Debug\netcoreapp1.0\WhatsTheTwilio.dll
+--temp-output:C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\bin\Debug\netcoreapp1.0\WhatsTheTwilio.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -202,11 +202,14 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlDocument\4.3.0\ref\netstandard1.3\System.Xml.XmlDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\obj\Debug\netcoreapp1.0\WhatsTheTwiliodotnet-compile.deps.json",WhatsTheTwilio.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Models\Contact.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Models\ContactContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Models\EnvironmentVariables.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\WhatsTheTwilio\src\WhatsTheTwilio\Models\Message.cs
+--resource:"C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\obj\Debug\netcoreapp1.0\WhatsTheTwiliodotnet-compile.deps.json",WhatsTheTwilio.deps.json
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Program.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Startup.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Migrations\20170509154049_Initial.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Migrations\20170509154049_Initial.Designer.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Migrations\ContactContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Models\Contact.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Models\ContactContext.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Models\EnvironmentVariables.cs
+C:\Users\epicodus\Desktop\Twilio\src\WhatsTheTwilio\Models\Message.cs

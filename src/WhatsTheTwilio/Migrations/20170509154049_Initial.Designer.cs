@@ -8,7 +8,7 @@ using WhatsTheTwilio.Models;
 namespace WhatsTheTwilio.Migrations
 {
     [DbContext(typeof(ContactContext))]
-    [Migration("20170508225343_Initial")]
+    [Migration("20170509154049_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
