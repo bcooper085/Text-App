@@ -1,17 +1,29 @@
-﻿@model WhatsTheTwilio.Models.Contact
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
+@model WhatsTheTwilio.Models.Contact
 
 <h2>Add A New Contact!</h2>
 
 @using (Html.BeginForm())
 {
-@Html.TextBoxFor(model => model.Name)
 @Html.LabelFor(model => model.Name)
+@Html.TextBoxFor(model => model.Name)
 <br />
 @Html.LabelFor(model => model.Number)
 @Html.TextBoxFor(model => model.Number)
 <input type="submit" value="Add!" />
 }
 
+
+<form action="NewContact" class="new-contact">
+    <label for="newName">Name: </label>
+    <input type="text" name="newName" />
+    <label for="newNumber">Number: </label>
+    <input type="text" name="newNumber" />
+    <button type="submit">Submit</button>
+</form>
+<div class="contact-confirm"></div>
 
 @Html.ActionLink("Back home", "Index")

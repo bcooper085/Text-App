@@ -19,12 +19,15 @@ namespace WhatsTheTwilio.Controllers
         {
             return View();
         }
+
         [HttpPost]
-        public IActionResult NewContact(Contact contact)
+        public IActionResult NewContact(string newName, string newNumber)
         {
-            db.Contacts.Add(contact);
+            Contact newContact = new Contact(newName, newNumber);
+            db.Contacts.Add(newContact);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            Console.WriteLine("I WAS USED");
+            return Json(newContact);
         }
 
         public IActionResult GetMessages()
